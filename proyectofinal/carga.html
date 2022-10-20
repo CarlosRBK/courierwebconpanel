@@ -1,0 +1,56 @@
+<meta charset="UTF-8">
+<head>
+  <link rel="stylesheet" href="carga.css">
+</head>
+
+<img src="./images/logo.png" alt="logo kd" width="200px" id="logokd" >
+<h2 class="titulopanel">Panel KD Express</h2>
+
+<div id="form-box">
+<form>
+  
+  <div>
+    <span>Fecha:</span> <input type="date" class="input" id="fecha">
+  </div>
+
+  <div>
+    <span>Remitente</span> <input type="text" id="remitente" class="input" placeholder="¿Quien envia?">
+  </div>
+  
+  <div>
+    <span>Origen:</span> <input type="text" class="input" id="origen" placeholder="¿De donde?">
+  </div>
+
+  <div>
+    <span>Destinatario:</span> <input type="text" class="input" id="destinatario" placeholder="¿Para quien?">
+  </div>
+
+  
+  <div>
+    <span>Destino:</span> <input type="text" class="input" id="destino" placeholder="¿Para donde?">
+  </div>
+
+  <div>
+    <span>Descripción:</span> <input type="text" id="descripcion" class="input" placeholder="¿Que cosa?">
+  </div>
+
+  
+  <div>
+    <span>Metodo pago:</span> 
+      <select id="medio-pago">
+          <option value="Contado">Contado</option>
+          <option value="Cobro en destino">Cobro en destino</option>
+          <option value="Credito">Crédito</option>
+      </select>
+  </div>
+  
+  <div>
+    <span>Monto:</span> <input type="number" class="input" id="monto" placeholder="¿Cuánto?">
+  </div>
+  
+</form>
+</div>
+
+<div id="button" class="button" onclick="onRegistrarBoleta()">Registrar Boleta</div>
+
+<script src="carga.js"></script>
